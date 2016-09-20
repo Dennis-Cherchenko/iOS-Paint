@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
 
+    let eraseColor = UIColor.white
+    var lineColor = UIColor.green
+    var lineThicknes = 1
     var lastPoint = CGPoint.zero
     var swiped = false
     
@@ -42,7 +45,7 @@ class ViewController: UIViewController {
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(5)
-        context?.setStrokeColor(UIColor(red: 0, green: 0, blue: 0, alpha: 1.0).cgColor)
+        context?.setStrokeColor(lineColor.cgColor)
 
         context?.strokePath()
 

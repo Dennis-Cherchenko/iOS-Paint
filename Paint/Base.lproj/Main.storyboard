@@ -21,43 +21,42 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-a6-s3W">
                                 <frame key="frameInset" minY="28" width="375" height="581"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="CN9-XY-3Uq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="okb-ES-MMV"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWi-iB-pUF">
-                                <frame key="frameInset" minX="70" minY="629" width="37" height="30"/>
-                                <state key="normal" title="Color"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-qB-DLf">
-                                <frame key="frameInset" minX="16" minY="629" width="40" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-qB-DLf">
                                 <state key="normal" title="Brush"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYU-db-e0N">
-                                <frame key="frameInset" minX="254" minY="629" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYU-db-e0N">
                                 <state key="normal" title="Undo"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-68-rmM">
-                                <frame key="frameInset" minX="115" minY="629" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-68-rmM">
                                 <state key="normal" title="Erase"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWi-iB-pUF">
+                                <state key="normal" title="Color"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pFS-68-rmM" firstAttribute="leading" secondItem="UWi-iB-pUF" secondAttribute="trailing" constant="8" id="3hp-Ij-3Ik"/>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="top" secondItem="a7j-a6-s3W" secondAttribute="bottom" constant="8" id="6kk-Pq-FsW"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nYU-db-e0N" secondAttribute="bottom" constant="8" id="6m9-aM-zi3"/>
-                            <constraint firstItem="nYU-db-e0N" firstAttribute="leading" secondItem="pFS-68-rmM" secondAttribute="trailing" priority="750" constant="100" id="8nA-xk-W5K"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pFS-68-rmM" secondAttribute="bottom" constant="8" id="EqB-eR-rtk"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Wok-qB-DLf" secondAttribute="leading" id="IdS-d2-2QS"/>
-                            <constraint firstItem="Wok-qB-DLf" firstAttribute="top" secondItem="a7j-a6-s3W" secondAttribute="bottom" constant="8" id="Iiq-Lk-kGM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWi-iB-pUF" secondAttribute="bottom" constant="8" id="LrR-ZG-7uL"/>
-                            <constraint firstItem="a7j-a6-s3W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MoX-Ya-R1E"/>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="TMM-dj-eJ8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wok-qB-DLf" secondAttribute="bottom" constant="8" id="UDk-pf-5qB"/>
-                            <constraint firstItem="Wok-qB-DLf" firstAttribute="height" secondItem="UWi-iB-pUF" secondAttribute="height" id="Ul0-Ru-VIq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nYU-db-e0N" secondAttribute="trailing" id="V2e-dL-dW5"/>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="leading" secondItem="Wok-qB-DLf" secondAttribute="trailing" constant="8" id="coa-Mp-BWf"/>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="width" secondItem="pFS-68-rmM" secondAttribute="width" id="esC-ab-Qgm"/>
-                            <constraint firstItem="Wok-qB-DLf" firstAttribute="width" secondItem="UWi-iB-pUF" secondAttribute="width" id="iKd-Ir-odl"/>
-                            <constraint firstItem="pFS-68-rmM" firstAttribute="top" secondItem="a7j-a6-s3W" secondAttribute="bottom" constant="8" id="zTx-E3-B76"/>
+                            <constraint firstItem="UWi-iB-pUF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="0Ij-M0-DDF"/>
+                            <constraint firstItem="UWi-iB-pUF" firstAttribute="width" secondItem="Wok-qB-DLf" secondAttribute="width" id="11A-CM-bS6"/>
+                            <constraint firstItem="UWi-iB-pUF" firstAttribute="height" secondItem="Wok-qB-DLf" secondAttribute="height" id="18J-tb-KsP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nYU-db-e0N" secondAttribute="trailing" id="62f-nd-1Oz"/>
+                            <constraint firstItem="nYU-db-e0N" firstAttribute="leading" secondItem="pFS-68-rmM" secondAttribute="trailing" priority="750" constant="100" id="DEd-Y8-zkS"/>
+                            <constraint firstItem="Wok-qB-DLf" firstAttribute="width" secondItem="pFS-68-rmM" secondAttribute="width" id="GMm-B2-df3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wok-qB-DLf" secondAttribute="bottom" constant="8" id="Iz1-cR-THU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nYU-db-e0N" secondAttribute="bottom" constant="8" id="O8L-Q2-XPi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pFS-68-rmM" secondAttribute="bottom" constant="8" id="R4R-8D-fJU"/>
+                            <constraint firstItem="a7j-a6-s3W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ro4-4e-BLk"/>
+                            <constraint firstItem="pFS-68-rmM" firstAttribute="leading" secondItem="Wok-qB-DLf" secondAttribute="trailing" constant="13" id="Tvo-lt-dBj"/>
+                            <constraint firstItem="Wok-qB-DLf" firstAttribute="leading" secondItem="UWi-iB-pUF" secondAttribute="trailing" constant="15" id="VWG-BV-QKO"/>
+                            <constraint firstItem="Wok-qB-DLf" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="YIi-tM-zYc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWi-iB-pUF" secondAttribute="bottom" constant="8" id="aFb-cX-9cv"/>
+                            <constraint firstItem="nYU-db-e0N" firstAttribute="width" secondItem="pFS-68-rmM" secondAttribute="width" id="ezQ-1a-akg"/>
+                            <constraint firstItem="nYU-db-e0N" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="jPY-R9-K8L"/>
                         </constraints>
                     </view>
                     <connections>
