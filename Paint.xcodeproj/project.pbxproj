@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958A79441D918C2400F27497 /* TouchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A79431D918C2400F27497 /* TouchModel.swift */; };
+		958A79481D91BA1D00F27497 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A79471D91BA1D00F27497 /* ModalViewController.swift */; };
+		958A794A1D91BA5800F27497 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A79491D91BA5800F27497 /* MenuViewController.swift */; };
 		958F1F811D906E64000812DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F1F801D906E64000812DA /* AppDelegate.swift */; };
 		958F1F831D906E64000812DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F1F821D906E64000812DA /* ViewController.swift */; };
 		958F1F861D906E64000812DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958F1F841D906E64000812DA /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		958A79431D918C2400F27497 /* TouchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchModel.swift; sourceTree = "<group>"; };
+		958A79471D91BA1D00F27497 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		958A79491D91BA5800F27497 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../MenuViewController.swift; sourceTree = "<group>"; };
 		958F1F7D1D906E64000812DA /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958F1F801D906E64000812DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958F1F821D906E64000812DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +105,10 @@
 			children = (
 				958F1F801D906E64000812DA /* AppDelegate.swift */,
 				958F1F821D906E64000812DA /* ViewController.swift */,
+				958A79431D918C2400F27497 /* TouchModel.swift */,
 				958F1F841D906E64000812DA /* Main.storyboard */,
+				958A79491D91BA5800F27497 /* MenuViewController.swift */,
+				958A79471D91BA1D00F27497 /* ModalViewController.swift */,
 				958F1F871D906E64000812DA /* Assets.xcassets */,
 				958F1F891D906E64000812DA /* LaunchScreen.storyboard */,
 				958F1F8C1D906E64000812DA /* Info.plist */,
@@ -262,6 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958A79481D91BA1D00F27497 /* ModalViewController.swift in Sources */,
+				958A794A1D91BA5800F27497 /* MenuViewController.swift in Sources */,
+				958A79441D918C2400F27497 /* TouchModel.swift in Sources */,
 				958F1F831D906E64000812DA /* ViewController.swift in Sources */,
 				958F1F811D906E64000812DA /* AppDelegate.swift in Sources */,
 			);
@@ -518,6 +530,7 @@
 				958F1FA71D906E64000812DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		958F1FA81D906E64000812DA /* Build configuration list for PBXNativeTarget "PaintTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +539,7 @@
 				958F1FAA1D906E64000812DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		958F1FAB1D906E64000812DA /* Build configuration list for PBXNativeTarget "PaintUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +548,7 @@
 				958F1FAD1D906E64000812DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

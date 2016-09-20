@@ -12,15 +12,29 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
 
+    @IBOutlet weak var btnColor: UIButton!
+
     let eraseColor = UIColor.white
     var lineColor = UIColor.green
     var lineThicknes = 1
     var lastPoint = CGPoint.zero
     var swiped = false
+
+
+    var touchModel = TouchModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //showModal()
+        
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,6 +82,12 @@ class ViewController: UIViewController {
         if !swiped {
             drawLines(fromPoint: lastPoint, toPoint: lastPoint)
         }
+    }
+
+    func showModal() {
+        let modalViewController = ModalViewController()
+        modalViewController.modalPresentationStyle = .overCurrentContext
+        present(modalViewController, animated: true, completion: nil)
     }
 
 }

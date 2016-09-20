@@ -19,8 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-a6-s3W">
-                                <frame key="frameInset" minY="28" width="375" height="581"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-a6-s3W">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="CN9-XY-3Uq"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="okb-ES-MMV"/>
@@ -37,9 +36,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWi-iB-pUF">
                                 <state key="normal" title="Color"/>
+                                <connections>
+                                    <segue destination="4eW-yV-HYD" kind="presentation" identifier="seguenum1" modalPresentationStyle="overFullScreen" id="1FL-B3-ttm"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UWi-iB-pUF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="0Ij-M0-DDF"/>
                             <constraint firstItem="UWi-iB-pUF" firstAttribute="width" secondItem="Wok-qB-DLf" secondAttribute="width" id="11A-CM-bS6"/>
@@ -47,6 +48,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="nYU-db-e0N" secondAttribute="trailing" id="62f-nd-1Oz"/>
                             <constraint firstItem="nYU-db-e0N" firstAttribute="leading" secondItem="pFS-68-rmM" secondAttribute="trailing" priority="750" constant="100" id="DEd-Y8-zkS"/>
                             <constraint firstItem="Wok-qB-DLf" firstAttribute="width" secondItem="pFS-68-rmM" secondAttribute="width" id="GMm-B2-df3"/>
+                            <constraint firstItem="UWi-iB-pUF" firstAttribute="top" secondItem="a7j-a6-s3W" secondAttribute="bottom" constant="20" id="IuV-ba-65I"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wok-qB-DLf" secondAttribute="bottom" constant="8" id="Iz1-cR-THU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nYU-db-e0N" secondAttribute="bottom" constant="8" id="O8L-Q2-XPi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pFS-68-rmM" secondAttribute="bottom" constant="8" id="R4R-8D-fJU"/>
@@ -55,11 +57,13 @@
                             <constraint firstItem="Wok-qB-DLf" firstAttribute="leading" secondItem="UWi-iB-pUF" secondAttribute="trailing" constant="15" id="VWG-BV-QKO"/>
                             <constraint firstItem="Wok-qB-DLf" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="YIi-tM-zYc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWi-iB-pUF" secondAttribute="bottom" constant="8" id="aFb-cX-9cv"/>
-                            <constraint firstItem="nYU-db-e0N" firstAttribute="width" secondItem="pFS-68-rmM" secondAttribute="width" id="ezQ-1a-akg"/>
                             <constraint firstItem="nYU-db-e0N" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="jPY-R9-K8L"/>
+                            <constraint firstItem="a7j-a6-s3W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jdO-K0-IBW"/>
+                            <constraint firstItem="a7j-a6-s3W" firstAttribute="leading" secondItem="UWi-iB-pUF" secondAttribute="trailing" constant="-63" id="xyw-05-GYY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnColor" destination="UWi-iB-pUF" id="quy-PE-7Wd"/>
                         <outlet property="imageView" destination="a7j-a6-s3W" id="mxD-cf-ITh"/>
                     </connections>
                 </viewController>
@@ -67,5 +71,31 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Afw-6a-g3z">
+            <objects>
+                <viewController id="4eW-yV-HYD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ke-DW-nqj"/>
+                        <viewControllerLayoutGuide type="bottom" id="dxu-IX-K8b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nkC-Cs-8VP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green_square.svg" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-c8-bKq">
+                                <frame key="frameInset" minX="53" minY="276" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7N2-wx-APh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="-328"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Green_square.svg" width="1024" height="1024"/>
+    </resources>
 </document>
