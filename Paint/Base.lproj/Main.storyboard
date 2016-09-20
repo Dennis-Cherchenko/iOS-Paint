@@ -16,50 +16,50 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-a6-s3W">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-a6-s3W">
+                                <frame key="frameInset" minY="28" width="320" height="387"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="CN9-XY-3Uq"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="okb-ES-MMV"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-qB-DLf">
-                                <state key="normal" title="Brush"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-qB-DLf">
+                                <state key="normal" image="paintbrush"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYU-db-e0N">
-                                <state key="normal" title="Undo"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-68-rmM">
+                                <state key="normal" title="Eraser" image="double-sided-eraser"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-68-rmM">
-                                <state key="normal" title="Erase"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWi-iB-pUF">
-                                <state key="normal" title="Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWi-iB-pUF">
+                                <state key="normal" title="Color" image="painter-palette-2"/>
                                 <connections>
                                     <segue destination="4eW-yV-HYD" kind="presentation" identifier="seguenum1" modalPresentationStyle="overFullScreen" id="1FL-B3-ttm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYU-db-e0N">
+                                <state key="normal" title="Undo" image="undo-arrow"/>
+                            </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="0Ij-M0-DDF"/>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="width" secondItem="Wok-qB-DLf" secondAttribute="width" id="11A-CM-bS6"/>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="height" secondItem="Wok-qB-DLf" secondAttribute="height" id="18J-tb-KsP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nYU-db-e0N" secondAttribute="trailing" id="62f-nd-1Oz"/>
-                            <constraint firstItem="nYU-db-e0N" firstAttribute="leading" secondItem="pFS-68-rmM" secondAttribute="trailing" priority="750" constant="100" id="DEd-Y8-zkS"/>
-                            <constraint firstItem="Wok-qB-DLf" firstAttribute="width" secondItem="pFS-68-rmM" secondAttribute="width" id="GMm-B2-df3"/>
-                            <constraint firstItem="UWi-iB-pUF" firstAttribute="top" secondItem="a7j-a6-s3W" secondAttribute="bottom" constant="20" id="IuV-ba-65I"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wok-qB-DLf" secondAttribute="bottom" constant="8" id="Iz1-cR-THU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nYU-db-e0N" secondAttribute="bottom" constant="8" id="O8L-Q2-XPi"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pFS-68-rmM" secondAttribute="bottom" constant="8" id="R4R-8D-fJU"/>
-                            <constraint firstItem="a7j-a6-s3W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ro4-4e-BLk"/>
-                            <constraint firstItem="pFS-68-rmM" firstAttribute="leading" secondItem="Wok-qB-DLf" secondAttribute="trailing" constant="13" id="Tvo-lt-dBj"/>
-                            <constraint firstItem="Wok-qB-DLf" firstAttribute="leading" secondItem="UWi-iB-pUF" secondAttribute="trailing" constant="15" id="VWG-BV-QKO"/>
-                            <constraint firstItem="Wok-qB-DLf" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="YIi-tM-zYc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWi-iB-pUF" secondAttribute="bottom" constant="8" id="aFb-cX-9cv"/>
-                            <constraint firstItem="nYU-db-e0N" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="jPY-R9-K8L"/>
-                            <constraint firstItem="a7j-a6-s3W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jdO-K0-IBW"/>
-                            <constraint firstItem="a7j-a6-s3W" firstAttribute="leading" secondItem="UWi-iB-pUF" secondAttribute="trailing" constant="-63" id="xyw-05-GYY"/>
+                            <constraint firstItem="UWi-iB-pUF" firstAttribute="top" secondItem="a7j-a6-s3W" secondAttribute="bottom" constant="25" id="4Sd-47-1Lm"/>
+                            <constraint firstItem="pFS-68-rmM" firstAttribute="width" secondItem="nYU-db-e0N" secondAttribute="width" id="A0h-UT-18t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nYU-db-e0N" secondAttribute="trailing" id="BYg-dM-ECK"/>
+                            <constraint firstItem="pFS-68-rmM" firstAttribute="height" secondItem="nYU-db-e0N" secondAttribute="height" id="Fa2-Am-MBl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wok-qB-DLf" secondAttribute="bottom" constant="8" id="Fa5-pL-Fu7"/>
+                            <constraint firstItem="Wok-qB-DLf" firstAttribute="leading" secondItem="UWi-iB-pUF" secondAttribute="trailing" constant="8" id="GVH-X5-gyP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nYU-db-e0N" secondAttribute="bottom" constant="8" id="KSA-A4-3ZI"/>
+                            <constraint firstItem="UWi-iB-pUF" firstAttribute="width" secondItem="Wok-qB-DLf" secondAttribute="width" id="KsI-wi-axk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWi-iB-pUF" secondAttribute="bottom" constant="8" id="P1C-jJ-62l"/>
+                            <constraint firstItem="nYU-db-e0N" firstAttribute="leading" secondItem="pFS-68-rmM" secondAttribute="trailing" priority="750" constant="98" id="Vxw-M1-Nwx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a7j-a6-s3W" secondAttribute="trailing" constant="74" id="WV5-hZ-3wq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UWi-iB-pUF" secondAttribute="leading" id="c0T-Bl-5b7"/>
+                            <constraint firstItem="Wok-qB-DLf" firstAttribute="height" secondItem="pFS-68-rmM" secondAttribute="height" id="dRu-5P-VW0"/>
+                            <constraint firstItem="UWi-iB-pUF" firstAttribute="height" secondItem="Wok-qB-DLf" secondAttribute="height" id="eyy-T0-dHv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pFS-68-rmM" secondAttribute="bottom" constant="8" id="j77-1F-hJX"/>
+                            <constraint firstItem="Wok-qB-DLf" firstAttribute="width" secondItem="pFS-68-rmM" secondAttribute="width" id="kag-Vr-HQj"/>
+                            <constraint firstItem="pFS-68-rmM" firstAttribute="leading" secondItem="Wok-qB-DLf" secondAttribute="trailing" constant="20" id="s17-TF-fjC"/>
                         </constraints>
                     </view>
                     <connections>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="116.25" y="122.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Afw-6a-g3z">
@@ -80,7 +80,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dxu-IX-K8b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nkC-Cs-8VP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green_square.svg" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-c8-bKq">
@@ -97,5 +97,9 @@
     </scenes>
     <resources>
         <image name="Green_square.svg" width="1024" height="1024"/>
+        <image name="double-sided-eraser" width="32" height="32"/>
+        <image name="paintbrush" width="32" height="32"/>
+        <image name="painter-palette-2" width="24" height="24"/>
+        <image name="undo-arrow" width="32" height="32"/>
     </resources>
 </document>

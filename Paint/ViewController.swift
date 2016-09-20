@@ -30,9 +30,6 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //showModal()
-        
-        
     }
 
 
@@ -82,12 +79,6 @@ class ViewController: UIViewController {
         if !swiped {
             drawLines(fromPoint: lastPoint, toPoint: lastPoint)
         }
-    }
-
-    func showModal() {
-        let modalViewController = ModalViewController()
-        modalViewController.modalPresentationStyle = .overCurrentContext
-        present(modalViewController, animated: true, completion: nil)
     }
 
 }
