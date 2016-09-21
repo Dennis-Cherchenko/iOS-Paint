@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     let eraseColor = UIColor.white
     var lineColor = UIColor.green
-    var lineThicknes = 1
+    var lineWidth = 2
     var lastPoint = CGPoint.zero
     var swiped = false
 
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
 
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(5)
+        context?.setLineWidth(CGFloat(self.lineWidth))
         context?.setStrokeColor(lineColor.cgColor)
 
         context?.strokePath()
