@@ -37,6 +37,9 @@ final class ViewController: UIViewController, ColorPaletteViewControllerDelegate
         if let destinationController = segue.destination as? ColorPaletteViewController {
             destinationController.delegate = self
         }
+        if let destinationController = segue.destination as? LineThicknessViewController {
+            destinationController.delegate = self
+        }
     }
 
     func drawLines(fromPoint:CGPoint,toPoint:CGPoint) {
@@ -56,11 +59,9 @@ final class ViewController: UIViewController, ColorPaletteViewControllerDelegate
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = true
-
         if let touch = touches.first {
             let currentPoint = touch.location(in: self.view)
             drawLines(fromPoint: lastPoint, toPoint: currentPoint)
-
             lastPoint = currentPoint
         }
     }
@@ -73,14 +74,14 @@ final class ViewController: UIViewController, ColorPaletteViewControllerDelegate
 
     // MARK: - ColorPaletterViewControllerDelegate
 
-    func colorPaletterViewController(controller: ColorPaletteViewController, didSelectColor color: UIColor ){
+    func colorPaletteViewController(controller: ColorPaletteViewController, didSelectColor color: UIColor ){
         lineColor = color
     }
 
     // MARK: - LineThicknessViewController
+
     func lineThicknessViewController(controller: LineThicknessViewController, didSelectThickness thickness: Int ){
         lineWidth = thickness
-        print("got here")
     }
 
 

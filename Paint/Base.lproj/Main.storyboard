@@ -83,21 +83,39 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Q-Se-Dcl">
                                 <state key="normal" image="circle-black"/>
+                                <connections>
+                                    <action selector="selectBlackColor:" destination="4eW-yV-HYD" eventType="touchUpInside" id="mhU-2e-7mk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-Q6-MJD">
                                 <state key="normal" image="circle-violet"/>
+                                <connections>
+                                    <action selector="selectPurpleColor:" destination="4eW-yV-HYD" eventType="touchUpInside" id="bC3-Yu-HFs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxq-FT-bHI">
                                 <state key="normal" image="circle-blue"/>
+                                <connections>
+                                    <action selector="selectBlueColor:" destination="4eW-yV-HYD" eventType="touchUpInside" id="GBF-5b-n05"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gie-BU-efQ">
                                 <state key="normal" image="circle-green"/>
+                                <connections>
+                                    <action selector="selectGreenColor:" destination="4eW-yV-HYD" eventType="touchUpInside" id="ib2-qU-qIP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEE-gu-RNX">
                                 <state key="normal" image="circle-yellow"/>
+                                <connections>
+                                    <action selector="selectYellowColor:" destination="4eW-yV-HYD" eventType="touchUpInside" id="eyQ-aQ-u8u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxy-Fm-gLo">
                                 <state key="normal" image="circle-red"/>
+                                <connections>
+                                    <action selector="selectRedColor:" destination="4eW-yV-HYD" eventType="touchUpInside" id="1yw-rk-jsz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>

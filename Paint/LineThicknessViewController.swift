@@ -22,6 +22,4 @@ class LineThicknessViewController: UIViewController {
         delegate?.lineThicknessViewController(controller: self, didSelectThickness: 10)
         dismiss(animated: true, completion: nil)
     }
-
-
 }
