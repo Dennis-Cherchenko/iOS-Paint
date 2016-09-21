@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		958A79441D918C2400F27497 /* TouchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A79431D918C2400F27497 /* TouchModel.swift */; };
+		9575E8911D9309C9008BC06A /* ColorPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575E8901D9309C9008BC06A /* ColorPaletteViewController.swift */; };
+		9575E8951D930E5E008BC06A /* LineThicknessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575E8941D930E5E008BC06A /* LineThicknessViewController.swift */; };
 		958F1F811D906E64000812DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F1F801D906E64000812DA /* AppDelegate.swift */; };
 		958F1F831D906E64000812DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F1F821D906E64000812DA /* ViewController.swift */; };
 		958F1F861D906E64000812DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958F1F841D906E64000812DA /* Main.storyboard */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		958A79431D918C2400F27497 /* TouchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchModel.swift; sourceTree = "<group>"; };
+		9575E8901D9309C9008BC06A /* ColorPaletteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewController.swift; sourceTree = "<group>"; };
+		9575E8941D930E5E008BC06A /* LineThicknessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineThicknessViewController.swift; sourceTree = "<group>"; };
 		958F1F7D1D906E64000812DA /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958F1F801D906E64000812DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958F1F821D906E64000812DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9575E8961D930F68008BC06A /* Button-Class-VCs */ = {
+			isa = PBXGroup;
+			children = (
+				9575E8901D9309C9008BC06A /* ColorPaletteViewController.swift */,
+				9575E8941D930E5E008BC06A /* LineThicknessViewController.swift */,
+			);
+			name = "Button-Class-VCs";
+			sourceTree = "<group>";
+		};
+		9575E8971D930F8D008BC06A /* Additional-Files */ = {
+			isa = PBXGroup;
+			children = (
+				958F1F871D906E64000812DA /* Assets.xcassets */,
+				958F1F891D906E64000812DA /* LaunchScreen.storyboard */,
+				958F1F8C1D906E64000812DA /* Info.plist */,
+			);
+			name = "Additional-Files";
+			sourceTree = "<group>";
+		};
 		958F1F741D906E64000812DA = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +120,11 @@
 		958F1F7F1D906E64000812DA /* Paint */ = {
 			isa = PBXGroup;
 			children = (
+				9575E8961D930F68008BC06A /* Button-Class-VCs */,
 				958F1F801D906E64000812DA /* AppDelegate.swift */,
 				958F1F821D906E64000812DA /* ViewController.swift */,
-				958A79431D918C2400F27497 /* TouchModel.swift */,
 				958F1F841D906E64000812DA /* Main.storyboard */,
-				958F1F871D906E64000812DA /* Assets.xcassets */,
-				958F1F891D906E64000812DA /* LaunchScreen.storyboard */,
-				958F1F8C1D906E64000812DA /* Info.plist */,
+				9575E8971D930F8D008BC06A /* Additional-Files */,
 			);
 			path = Paint;
 			sourceTree = "<group>";
@@ -265,7 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958A79441D918C2400F27497 /* TouchModel.swift in Sources */,
+				9575E8911D9309C9008BC06A /* ColorPaletteViewController.swift in Sources */,
+				9575E8951D930E5E008BC06A /* LineThicknessViewController.swift in Sources */,
 				958F1F831D906E64000812DA /* ViewController.swift in Sources */,
 				958F1F811D906E64000812DA /* AppDelegate.swift in Sources */,
 			);

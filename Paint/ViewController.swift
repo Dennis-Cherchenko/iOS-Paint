@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var lineWidth = 2
     var lastPoint = CGPoint.zero
     var swiped = false
-    var touchModel = TouchModel()
+    //var touchModel = TouchModel() // TODO:
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,12 +16,15 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-a6-s3W"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-qB-DLf">
                                 <state key="normal" image="paintbrush"/>
+                                <connections>
+                                    <segue destination="sqf-UH-YmD" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="7Cr-VH-SaW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-68-rmM">
                                 <state key="normal" image="double-sided-eraser"/>
@@ -60,20 +63,23 @@
             </objects>
             <point key="canvasLocation" x="116" y="121.88905547226388"/>
         </scene>
-        <!--View Controller-->
+        <!--Color Palette View Controller-->
         <scene sceneID="Afw-6a-g3z">
             <objects>
-                <viewController id="4eW-yV-HYD" sceneMemberID="viewController">
+                <viewController id="4eW-yV-HYD" customClass="ColorPaletteViewController" customModule="Paint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ke-DW-nqj"/>
                         <viewControllerLayoutGuide type="bottom" id="dxu-IX-K8b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nkC-Cs-8VP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O9-KQ-nhC">
                                 <state key="normal" image="painter-palette"/>
+                                <connections>
+                                    <action selector="closeColorPalette:" destination="4eW-yV-HYD" eventType="touchUpInside" id="M7a-CA-pNc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Q-Se-Dcl">
                                 <state key="normal" image="circle-black"/>
@@ -111,10 +117,76 @@
                             <constraint firstItem="kdL-Q6-MJD" firstAttribute="top" secondItem="Uxq-FT-bHI" secondAttribute="bottom" constant="8" id="w71-nj-4qm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnColorPalette" destination="4O9-KQ-nhC" id="XUj-OH-dlT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7N2-wx-APh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828.98550724637687" y="-328.53260869565219"/>
+        </scene>
+        <!--Line Thickness View Controller-->
+        <scene sceneID="zGg-Y2-pcc">
+            <objects>
+                <viewController id="sqf-UH-YmD" customClass="LineThicknessViewController" customModule="Paint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Dz-jc-hot"/>
+                        <viewControllerLayoutGuide type="bottom" id="dlr-Dr-NYV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BJV-md-rpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0H-d7-FNK">
+                                <state key="normal" image="painter-palette"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-pQ-2AF">
+                                <state key="normal" image="paintbrush"/>
+                                <connections>
+                                    <action selector="closeLineThicknessChooser:" destination="sqf-UH-YmD" eventType="touchUpInside" id="NsX-ob-oUj"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7HI-Ey-XLn">
+                                <frame key="frameInset" minX="49" minY="469" width="46" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-YS-OIQ">
+                                        <frame key="frameInset" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-Li-rxn">
+                                        <frame key="frameInset" minY="30" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJF-h2-fjG">
+                                        <frame key="frameInset" minY="60" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHy-lZ-eDn">
+                                        <frame key="frameInset" minY="90" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCy-My-jEl">
+                                        <frame key="frameInset" minY="120" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dlr-Dr-NYV" firstAttribute="top" secondItem="z0H-d7-FNK" secondAttribute="bottom" constant="8" id="9yP-LQ-jm5"/>
+                            <constraint firstItem="dlr-Dr-NYV" firstAttribute="top" secondItem="dDl-pQ-2AF" secondAttribute="bottom" constant="8" id="EgP-tK-sME"/>
+                            <constraint firstItem="z0H-d7-FNK" firstAttribute="leading" secondItem="BJV-md-rpZ" secondAttribute="leadingMargin" id="bZb-zy-y9U"/>
+                            <constraint firstItem="dDl-pQ-2AF" firstAttribute="leading" secondItem="z0H-d7-FNK" secondAttribute="trailing" constant="8" id="scv-x1-f49"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLineThicknessChooser" destination="dDl-pQ-2AF" id="fT7-pe-UXU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FW9-Bk-cI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="324"/>
         </scene>
     </scenes>
     <resources>
