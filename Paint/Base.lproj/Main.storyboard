@@ -75,63 +75,38 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O9-KQ-nhC">
                                 <state key="normal" image="painter-palette"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Q-Se-Dcl">
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Q-Se-Dcl">
+                                <state key="normal" image="circle-black"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-Q6-MJD">
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-Q6-MJD">
+                                <state key="normal" image="circle-violet"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxq-FT-bHI">
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxq-FT-bHI">
+                                <state key="normal" image="circle-blue"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gie-BU-efQ">
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gie-BU-efQ">
+                                <state key="normal" image="circle-green"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEE-gu-RNX">
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEE-gu-RNX">
+                                <state key="normal" image="circle-yellow"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxy-Fm-gLo">
-                                <frame key="frameInset" minX="9" minY="400" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdv-ua-oEd">
-                                <frame key="frameInset" minX="9" minY="374" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dA-CA-sgy">
-                                <frame key="frameInset" minX="9" minY="336" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btL-GL-myo">
-                                <frame key="frameInset" minX="9" minY="298" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhD-Fi-FCJ">
-                                <frame key="frameInset" minX="9" minY="260" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxy-Fm-gLo">
+                                <state key="normal" image="circle-red"/>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Mdv-ua-oEd" firstAttribute="top" secondItem="7dA-CA-sgy" secondAttribute="bottom" constant="8" id="5Gt-dO-7E7"/>
-                            <constraint firstItem="cEE-gu-RNX" firstAttribute="top" secondItem="cxy-Fm-gLo" secondAttribute="bottom" constant="8" id="5PV-UK-rva"/>
-                            <constraint firstItem="BhD-Fi-FCJ" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="ELu-qe-BY4"/>
-                            <constraint firstItem="cxy-Fm-gLo" firstAttribute="top" secondItem="Mdv-ua-oEd" secondAttribute="bottom" constant="8" id="IYQ-G0-iBW"/>
                             <constraint firstItem="gie-BU-efQ" firstAttribute="top" secondItem="cEE-gu-RNX" secondAttribute="bottom" constant="8" id="Isl-f9-V2O"/>
-                            <constraint firstItem="u9Q-Se-Dcl" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="Kwb-3u-A0T"/>
-                            <constraint firstItem="Mdv-ua-oEd" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="OmK-x9-nNm"/>
+                            <constraint firstItem="cxy-Fm-gLo" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="JBw-jV-z3M"/>
                             <constraint firstItem="Uxq-FT-bHI" firstAttribute="top" secondItem="gie-BU-efQ" secondAttribute="bottom" constant="8" id="Xh2-hM-2UF"/>
-                            <constraint firstItem="7dA-CA-sgy" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="Y6o-Mu-ntL"/>
-                            <constraint firstItem="btL-GL-myo" firstAttribute="top" secondItem="BhD-Fi-FCJ" secondAttribute="bottom" constant="8" id="Yk4-zd-j9g"/>
+                            <constraint firstItem="u9Q-Se-Dcl" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="anp-8d-SPX"/>
                             <constraint firstItem="dxu-IX-K8b" firstAttribute="top" secondItem="4O9-KQ-nhC" secondAttribute="bottom" constant="8" id="cNr-wG-EMP"/>
                             <constraint firstItem="Uxq-FT-bHI" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="diu-KY-Upj"/>
                             <constraint firstItem="cEE-gu-RNX" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="fUJ-if-zhw"/>
                             <constraint firstItem="4O9-KQ-nhC" firstAttribute="top" secondItem="u9Q-Se-Dcl" secondAttribute="bottom" constant="16" id="fzd-RQ-DTK"/>
                             <constraint firstItem="gie-BU-efQ" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="jil-wn-nVj"/>
-                            <constraint firstItem="btL-GL-myo" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="kSW-YF-HMf"/>
+                            <constraint firstItem="cEE-gu-RNX" firstAttribute="top" secondItem="cxy-Fm-gLo" secondAttribute="bottom" constant="8" id="kxo-Iq-GFW"/>
                             <constraint firstItem="u9Q-Se-Dcl" firstAttribute="top" secondItem="kdL-Q6-MJD" secondAttribute="bottom" constant="8" id="q0N-ur-QKY"/>
-                            <constraint firstItem="cxy-Fm-gLo" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="q3Z-KJ-c70"/>
                             <constraint firstItem="kdL-Q6-MJD" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="rfM-MG-Vew"/>
-                            <constraint firstItem="7dA-CA-sgy" firstAttribute="top" secondItem="btL-GL-myo" secondAttribute="bottom" constant="8" id="tkP-CW-9FF"/>
                             <constraint firstItem="4O9-KQ-nhC" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" id="umr-G6-FDc"/>
                             <constraint firstItem="kdL-Q6-MJD" firstAttribute="top" secondItem="Uxq-FT-bHI" secondAttribute="bottom" constant="8" id="w71-nj-4qm"/>
                         </constraints>
@@ -143,6 +118,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle-black" width="32" height="32"/>
+        <image name="circle-blue" width="32" height="32"/>
+        <image name="circle-green" width="32" height="32"/>
+        <image name="circle-red" width="32" height="32"/>
+        <image name="circle-violet" width="32" height="32"/>
+        <image name="circle-yellow" width="32" height="32"/>
         <image name="double-sided-eraser" width="32" height="32"/>
         <image name="paintbrush" width="32" height="32"/>
         <image name="painter-palette" width="32" height="32"/>
