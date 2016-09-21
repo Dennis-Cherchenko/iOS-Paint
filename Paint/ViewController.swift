@@ -8,17 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController, ColorPaletteViewControllerDelegate, LineThicknessViewControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
 
-    let eraseColor = UIColor.white
-    var lineColor = UIColor.green
-    var lineWidth = 2
-    var lastPoint = CGPoint.zero
-    var swiped = false
-    //var touchModel = TouchModel() // TODO:
-    
+    private let eraseColor = UIColor.white
+    private var lineColor = UIColor.black
+    private var lineWidth = 2
+    private var lastPoint = CGPoint.zero
+    private var swiped = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,14 +26,16 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
         if let touch = touches.first {
             lastPoint = touch.location(in: self.view)
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationController = segue.destination as? ColorPaletteViewController {
+            destinationController.delegate = self
         }
     }
 
@@ -69,5 +70,18 @@ class ViewController: UIViewController {
             drawLines(fromPoint: lastPoint, toPoint: lastPoint)
         }
     }
+
+    // MARK: - ColorPaletterViewControllerDelegate
+
+    func colorPaletterViewController(controller: ColorPaletteViewController, didSelectColor color: UIColor ){
+        lineColor = color
+    }
+
+    // MARK: - LineThicknessViewController
+    func lineThicknessViewController(controller: LineThicknessViewController, didSelectThickness thickness: Int ){
+        lineWidth = thickness
+        print("got here")
+    }
+
 
 }

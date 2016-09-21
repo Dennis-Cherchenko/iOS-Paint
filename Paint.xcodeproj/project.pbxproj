@@ -90,6 +90,7 @@
 		9575E8971D930F8D008BC06A /* Additional-Files */ = {
 			isa = PBXGroup;
 			children = (
+				958F1F801D906E64000812DA /* AppDelegate.swift */,
 				958F1F871D906E64000812DA /* Assets.xcassets */,
 				958F1F891D906E64000812DA /* LaunchScreen.storyboard */,
 				958F1F8C1D906E64000812DA /* Info.plist */,
@@ -121,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				9575E8961D930F68008BC06A /* Button-Class-VCs */,
-				958F1F801D906E64000812DA /* AppDelegate.swift */,
 				958F1F821D906E64000812DA /* ViewController.swift */,
 				958F1F841D906E64000812DA /* Main.storyboard */,
 				9575E8971D930F8D008BC06A /* Additional-Files */,

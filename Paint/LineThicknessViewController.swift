@@ -8,24 +8,18 @@
 
 import UIKit
 
+protocol LineThicknessViewControllerDelegate: class {
+    func lineThicknessViewController(controller: LineThicknessViewController, didSelectThickness thickness: Int)
+}
+
 class LineThicknessViewController: UIViewController {
 
+    weak var delegate: LineThicknessViewControllerDelegate?
+
     @IBOutlet weak var btnLineThicknessChooser: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
 
     @IBAction func closeLineThicknessChooser(_ sender: UIButton) {
+        delegate?.lineThicknessViewController(controller: self, didSelectThickness: 10)
         dismiss(animated: true, completion: nil)
     }
 

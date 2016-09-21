@@ -8,23 +8,18 @@
 
 import UIKit
 
+protocol ColorPaletteViewControllerDelegate: class {
+    func colorPaletterViewController(controller: ColorPaletteViewController, didSelectColor color: UIColor )
+}
+
 class ColorPaletteViewController: UIViewController {
+
+    weak var delegate: ColorPaletteViewControllerDelegate?
 
     @IBOutlet weak var btnColorPalette: UIButton!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-   func closeColorPalette(sender: UIButton!) {
-        dismiss(animated: true, completion: nil)
-    }
-
     @IBAction func closeColorPalette(_ sender: UIButton) {
+        delegate?.colorPaletterViewController(controller: self, didSelectColor: UIColor.blue)
         dismiss(animated: true, completion: nil)
     }
 }

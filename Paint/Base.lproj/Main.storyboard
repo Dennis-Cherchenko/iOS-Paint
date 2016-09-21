@@ -143,45 +143,40 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-pQ-2AF">
                                 <state key="normal" image="paintbrush"/>
                                 <connections>
-                                    <action selector="closeLineThicknessChooser:" destination="sqf-UH-YmD" eventType="touchUpInside" id="NsX-ob-oUj"/>
+                                    <action selector="closeLineThicknessChooser:" destination="sqf-UH-YmD" eventType="touchUpInside" id="wnq-zU-VSK"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7HI-Ey-XLn">
-                                <frame key="frameInset" minX="49" minY="469" width="46" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7HI-Ey-XLn">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-YS-OIQ">
-                                        <frame key="frameInset" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-YS-OIQ">
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-Li-rxn">
-                                        <frame key="frameInset" minY="30" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-Li-rxn">
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJF-h2-fjG">
-                                        <frame key="frameInset" minY="60" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJF-h2-fjG">
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHy-lZ-eDn">
-                                        <frame key="frameInset" minY="90" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHy-lZ-eDn">
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCy-My-jEl">
-                                        <frame key="frameInset" minY="120" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCy-My-jEl">
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="dlr-Dr-NYV" firstAttribute="top" secondItem="z0H-d7-FNK" secondAttribute="bottom" constant="8" id="9yP-LQ-jm5"/>
-                            <constraint firstItem="dlr-Dr-NYV" firstAttribute="top" secondItem="dDl-pQ-2AF" secondAttribute="bottom" constant="8" id="EgP-tK-sME"/>
-                            <constraint firstItem="z0H-d7-FNK" firstAttribute="leading" secondItem="BJV-md-rpZ" secondAttribute="leadingMargin" id="bZb-zy-y9U"/>
-                            <constraint firstItem="dDl-pQ-2AF" firstAttribute="leading" secondItem="z0H-d7-FNK" secondAttribute="trailing" constant="8" id="scv-x1-f49"/>
+                            <constraint firstItem="7HI-Ey-XLn" firstAttribute="leading" secondItem="z0H-d7-FNK" secondAttribute="trailing" constant="1" id="6pD-wH-8C7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="z0H-d7-FNK" secondAttribute="leading" id="8RH-Ht-fcl"/>
+                            <constraint firstItem="dlr-Dr-NYV" firstAttribute="top" secondItem="dDl-pQ-2AF" secondAttribute="bottom" constant="8" id="Uh6-x3-qT8"/>
+                            <constraint firstItem="dlr-Dr-NYV" firstAttribute="top" secondItem="z0H-d7-FNK" secondAttribute="bottom" constant="8" id="ZpW-19-5cW"/>
+                            <constraint firstItem="dDl-pQ-2AF" firstAttribute="top" secondItem="7HI-Ey-XLn" secondAttribute="bottom" constant="8" id="dvQ-Xk-7L1"/>
+                            <constraint firstItem="dDl-pQ-2AF" firstAttribute="leading" secondItem="z0H-d7-FNK" secondAttribute="trailing" constant="8" id="tKE-kW-pSB"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnLineThicknessChooser" destination="dDl-pQ-2AF" id="fT7-pe-UXU"/>
+                        <outlet property="btnLineThicknessChooser" destination="dDl-pQ-2AF" id="Bcj-xh-EKw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FW9-Bk-cI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
