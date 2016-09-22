@@ -14,9 +14,11 @@ final class ViewController: UIViewController, ColorPaletteViewControllerDelegate
 
     private let eraseColor = UIColor.white
     private var lineColor = UIColor.black
-    private var lineWidth = 2
+    private var lineWidth = 1
     private var lastPoint = CGPoint.zero
     private var swiped = false
+
+    private var touchModel = TouchModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,11 @@ final class ViewController: UIViewController, ColorPaletteViewControllerDelegate
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+
+    @IBAction func selectedEraser(_ sender: UIButton) {
+        lineColor = eraseColor
+
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

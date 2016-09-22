@@ -28,6 +28,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFS-68-rmM">
                                 <state key="normal" image="double-sided-eraser"/>
+                                <connections>
+                                    <action selector="selectedEraser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpb-bS-0Ns"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS0-eF-50w">
                                 <state key="normal" image="painter-palette"/>
@@ -118,6 +121,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.74914117907801414" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gie-BU-efQ" firstAttribute="top" secondItem="cEE-gu-RNX" secondAttribute="bottom" constant="8" id="Isl-f9-V2O"/>
                             <constraint firstItem="cxy-Fm-gLo" firstAttribute="leading" secondItem="nkC-Cs-8VP" secondAttribute="leadingMargin" constant="-7" id="JBw-jV-z3M"/>
@@ -155,7 +159,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0H-d7-FNK">
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0H-d7-FNK">
                                 <state key="normal" image="painter-palette"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-pQ-2AF">
@@ -168,22 +172,40 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-YS-OIQ">
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectThicknessSize1:" destination="sqf-UH-YmD" eventType="touchUpInside" id="uSb-Yo-Eoj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-Li-rxn">
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectThicknessSize1:" destination="sqf-UH-YmD" eventType="touchUpInside" id="9el-Pe-o2Z"/>
+                                            <action selector="selectThicknessSize2:" destination="sqf-UH-YmD" eventType="touchUpInside" id="AiZ-W2-Duy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJF-h2-fjG">
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectThicknessSize1:" destination="sqf-UH-YmD" eventType="touchUpInside" id="RJo-oN-nS4"/>
+                                            <action selector="selectThicknessSize5:" destination="sqf-UH-YmD" eventType="touchUpInside" id="aWK-jr-Rd7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHy-lZ-eDn">
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectThicknessSize10:" destination="sqf-UH-YmD" eventType="touchUpInside" id="eUt-3Y-Fw3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCy-My-jEl">
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="selectThicknessSize20:" destination="sqf-UH-YmD" eventType="touchUpInside" id="ImX-Ni-yf4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.74914117907801414" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7HI-Ey-XLn" firstAttribute="leading" secondItem="z0H-d7-FNK" secondAttribute="trailing" constant="1" id="6pD-wH-8C7"/>
                             <constraint firstAttribute="leadingMargin" secondItem="z0H-d7-FNK" secondAttribute="leading" id="8RH-Ht-fcl"/>

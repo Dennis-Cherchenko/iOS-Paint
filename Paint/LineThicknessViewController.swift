@@ -19,7 +19,32 @@ class LineThicknessViewController: UIViewController {
     @IBOutlet weak var btnLineThicknessChooser: UIButton!
 
     @IBAction func closeLineThicknessChooser(_ sender: UIButton) {
-        delegate?.lineThicknessViewController(controller: self, didSelectThickness: 10)
+        dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func selectThicknessSize1(_ sender: UIButton) {
+        chooseThickness(thickness: 1)
+    }
+
+    @IBAction func selectThicknessSize2(_ sender: UIButton) {
+        chooseThickness(thickness: 2)
+    }
+
+    @IBAction func selectThicknessSize5(_ sender: UIButton) {
+        chooseThickness(thickness: 5)
+    }
+
+    @IBAction func selectThicknessSize10(_ sender: UIButton) {
+        chooseThickness(thickness: 10)
+    }
+
+    @IBAction func selectThicknessSize20(_ sender: UIButton) {
+        chooseThickness(thickness: 20)
+    }
+
+
+    private func chooseThickness(thickness: Int){
+        delegate?.lineThicknessViewController(controller: self, didSelectThickness: thickness)
         dismiss(animated: true, completion: nil)
     }
 }

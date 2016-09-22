@@ -19,7 +19,7 @@ class ColorPaletteViewController: UIViewController {
     @IBOutlet weak var btnColorPalette: UIButton!
 
     @IBAction func closeColorPalette(_ sender: UIButton) {
-        chooseColor(color: UIColor.blue)
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func selectRedColor(_ sender: UIButton) {
