@@ -42,9 +42,9 @@ class LineThicknessViewController: UIViewController {
         chooseThickness(thickness: 20)
     }
 
-
     private func chooseThickness(thickness: Int){
         delegate?.lineThicknessViewController(controller: self, didSelectThickness: thickness)
         dismiss(animated: true, completion: nil)
+        print("inside 2")
     }
 }

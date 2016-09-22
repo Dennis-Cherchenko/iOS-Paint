@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9575E8911D9309C9008BC06A /* ColorPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575E8901D9309C9008BC06A /* ColorPaletteViewController.swift */; };
-		9575E8951D930E5E008BC06A /* LineThicknessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575E8941D930E5E008BC06A /* LineThicknessViewController.swift */; };
+		95797B111D941FF800B77B53 /* ColorPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95797B0F1D941FF800B77B53 /* ColorPaletteViewController.swift */; };
+		95797B121D941FF800B77B53 /* LineThicknessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95797B101D941FF800B77B53 /* LineThicknessViewController.swift */; };
+		95797B161D94247500B77B53 /* DrawingCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95797B151D94247500B77B53 /* DrawingCanvasViewController.swift */; };
 		958F1F811D906E64000812DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F1F801D906E64000812DA /* AppDelegate.swift */; };
 		958F1F831D906E64000812DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F1F821D906E64000812DA /* ViewController.swift */; };
 		958F1F861D906E64000812DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958F1F841D906E64000812DA /* Main.storyboard */; };
@@ -36,8 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9575E8901D9309C9008BC06A /* ColorPaletteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewController.swift; sourceTree = "<group>"; };
-		9575E8941D930E5E008BC06A /* LineThicknessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineThicknessViewController.swift; sourceTree = "<group>"; };
+		95797B0F1D941FF800B77B53 /* ColorPaletteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPaletteViewController.swift; path = "Button-Class-VCs/ColorPaletteViewController.swift"; sourceTree = "<group>"; };
+		95797B101D941FF800B77B53 /* LineThicknessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineThicknessViewController.swift; path = "Button-Class-VCs/LineThicknessViewController.swift"; sourceTree = "<group>"; };
+		95797B151D94247500B77B53 /* DrawingCanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingCanvasViewController.swift; sourceTree = "<group>"; };
 		958F1F7D1D906E64000812DA /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958F1F801D906E64000812DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958F1F821D906E64000812DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,15 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9575E8961D930F68008BC06A /* Button-Class-VCs */ = {
-			isa = PBXGroup;
-			children = (
-				9575E8901D9309C9008BC06A /* ColorPaletteViewController.swift */,
-				9575E8941D930E5E008BC06A /* LineThicknessViewController.swift */,
-			);
-			name = "Button-Class-VCs";
-			sourceTree = "<group>";
-		};
 		9575E8971D930F8D008BC06A /* Additional-Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +89,15 @@
 				958F1F8C1D906E64000812DA /* Info.plist */,
 			);
 			name = "Additional-Files";
+			sourceTree = "<group>";
+		};
+		95797B0E1D941FEE00B77B53 /* Button-Class-VCs */ = {
+			isa = PBXGroup;
+			children = (
+				95797B0F1D941FF800B77B53 /* ColorPaletteViewController.swift */,
+				95797B101D941FF800B77B53 /* LineThicknessViewController.swift */,
+			);
+			name = "Button-Class-VCs";
 			sourceTree = "<group>";
 		};
 		958F1F741D906E64000812DA = {
@@ -121,9 +123,10 @@
 		958F1F7F1D906E64000812DA /* Paint */ = {
 			isa = PBXGroup;
 			children = (
-				9575E8961D930F68008BC06A /* Button-Class-VCs */,
-				958F1F821D906E64000812DA /* ViewController.swift */,
 				958F1F841D906E64000812DA /* Main.storyboard */,
+				958F1F821D906E64000812DA /* ViewController.swift */,
+				95797B151D94247500B77B53 /* DrawingCanvasViewController.swift */,
+				95797B0E1D941FEE00B77B53 /* Button-Class-VCs */,
 				9575E8971D930F8D008BC06A /* Additional-Files */,
 			);
 			path = Paint;
@@ -284,9 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9575E8911D9309C9008BC06A /* ColorPaletteViewController.swift in Sources */,
-				9575E8951D930E5E008BC06A /* LineThicknessViewController.swift in Sources */,
 				958F1F831D906E64000812DA /* ViewController.swift in Sources */,
+				95797B121D941FF800B77B53 /* LineThicknessViewController.swift in Sources */,
+				95797B111D941FF800B77B53 /* ColorPaletteViewController.swift in Sources */,
+				95797B161D94247500B77B53 /* DrawingCanvasViewController.swift in Sources */,
 				958F1F811D906E64000812DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

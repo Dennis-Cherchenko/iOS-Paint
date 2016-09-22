@@ -48,5 +48,6 @@ class ColorPaletteViewController: UIViewController {
     private func chooseColor(color: UIColor){
         delegate?.colorPaletteViewController(controller: self, didSelectColor: color)
         dismiss(animated: true, completion: nil)
+        print("inside")
     }
 }
