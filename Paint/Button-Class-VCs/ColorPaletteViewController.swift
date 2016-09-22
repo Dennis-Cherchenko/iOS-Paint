@@ -22,8 +22,14 @@ class ColorPaletteViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBOutlet weak var selectRedColor: UIImageView!
+
     @IBAction func selectRedColor(_ sender: UIButton) {
         chooseColor(color: UIColor.red)
+    }
+
+    @IBAction func selectOrangeColor(_ sender: UIButton) {
+        chooseColor(color: UIColor.orange)
     }
 
     @IBAction func selectYellowColor(_ sender: UIButton) {

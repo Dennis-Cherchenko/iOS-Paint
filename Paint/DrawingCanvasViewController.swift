@@ -78,5 +78,4 @@ class DrawingCanvasViewController: UIViewController, ColorPaletteViewControllerD
     func lineThicknessViewController(controller: LineThicknessViewController, didSelectThickness thickness: Int ){
         lineWidth = thickness
     }
-
 }
